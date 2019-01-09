@@ -18,14 +18,8 @@ public class MainActivity extends AppCompatActivity {
 
         FragmentManager frgManager = getSupportFragmentManager();
         FragmentTransaction frgTran = frgManager.beginTransaction();
-        frgTran.replace(R.id.contentFragment ,new SecondFragment())
+        frgTran.replace(R.id.contentFragment ,new FirstFragment())
                 .addToBackStack(null).commit();
-
-
-//        FragmentManager fragmentManager = getSupportFragmentManager();
-//        FragmentTransaction frgTran = fragmentManager.beginTransaction();
-//
-//        frgTran.replace(R.id.contentFragment, new FirstFragment()).addToBackStack(null).commit();
 
 
     }
