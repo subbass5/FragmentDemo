@@ -33,6 +33,7 @@ public class FirstFragment extends Fragment {
 
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
+                manager.popBackStack();
                 transaction.replace(R.id.contentFragment,new SecondFragment())
                         .addToBackStack(null).commit();
             }
